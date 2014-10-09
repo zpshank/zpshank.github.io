@@ -8,6 +8,17 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
+body {
+    padding-top: 70px;
+}
+
+/**
+* Header Fonts
+*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: $base-font-family;
+}
+
 
 
 /**
@@ -88,15 +99,15 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: $secondary;
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: $secondary;
     }
 
     &:hover {
-        color: $text-color;
+        color: $secondary-dark;
         text-decoration: underline;
     }
 }

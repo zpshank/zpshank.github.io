@@ -6,7 +6,7 @@
 
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-family: News Cycle, Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -24,6 +24,12 @@ $grey-color-dark:  darken($grey-color, 25%);
 $on-palm:          600px;
 $on-laptop:        800px;
 
+$primary:           #b10046;
+$primary-dark:      #8a0036;
+$secondary:         #0095b1;
+$secondary-dark:    #007c8a;
+$trinary:           #00b112;
+$trinary-dark:      #0080af;
 
 
 // Using media queries with like this:
@@ -39,11 +45,94 @@ $on-laptop:        800px;
     }
 }
 
+// @font-face {
+//     font-family: RobotoLight;
+//     src: url({{"/fonts/Roboto-Light.ttf" | prepend: site.baseurl }})
+// }
+
+@font-face {
+  font-family: 'News Cycle';
+  font-style: normal;
+  font-weight: 400;
+  src: local('News Cycle Regular'), local('NewsCycle-Regular'), url(http://fonts.gstatic.com/s/newscycle/v12/9Xe8dq6pQDsPyVH2D3tMQr3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+@font-face {
+  font-family: 'News Cycle';
+  font-style: normal;
+  font-weight: 700;
+  src: local('News Cycle Bold'), local('NewsCycle-Bold'), url(http://fonts.gstatic.com/s/newscycle/v12/G28Ny31cr5orMqEQy6ljt3bFhgvWbfSbdVg11QabG8w.woff) format('woff');
+}
+
+
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
-        "layout",
         "syntax-highlighting"
 ;
+
+// FI Sizes
+.size-12 { font-size: 12px; }
+
+.size-14 { font-size: 14px; }
+
+.size-16 { font-size: 16px; }
+
+.size-18 { font-size: 18px; }
+
+.size-21 { font-size: 21px; }
+
+.size-24 { font-size: 24px; }
+
+.size-36 { font-size: 36px; }
+
+.size-48 { font-size: 48px; }
+
+.size-60 { font-size: 60px; }
+
+.size-72 { font-size: 72px; }
+
+.fa-twitter {
+  color: #55ACEE;
+}
+
+.fa-github {
+  color: #333;
+}
+
+.navbar {
+  font-family: $base-font-family;
+}
+
+a.navbar-brand:active  {
+  text-decoration: none;
+}
+
+a.navbar-brand:visited  {
+  text-decoration: none;
+}
+
+.navbar-default .navbar-brand {
+  // color: #ff2052;
+  // color: #0a89ff
+  // color: #6699ff;
+  color: $primary;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: $primary-dark;
+}
+
+.navbar-default .navbar-brand:focus {
+  color: $primary;
+}
+
+a:focus {
+  outline: none;
+}
+
+.navbar-brand img{
+  height: 35px;
+  width: 35px;
+}
