@@ -136,3 +136,35 @@ a:focus {
   height: 35px;
   width: 35px;
 }
+
+// Footer
+.footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+}
+
+.text-muted {
+  color: #777;
+}
+
+.post-container .post-link{
+  margin-bottom: 0;
+}
+
+.post-container .post-date{
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.post-container .post-preview {
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.minimal-posts-list {
+  margin: 15px 0 0 0;
+}
