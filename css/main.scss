@@ -137,6 +137,11 @@ a:focus {
   width: 35px;
 }
 
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}
+
 // Footer
 .footer {
   position: fixed;
@@ -180,4 +185,25 @@ a:focus {
 
 .page-content { 
   margin-bottom: 100px;
+}
+
+.proficient-container {
+  text-align: center;
+}
+
+.list-inline {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.proficient-span {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+.proficient-span img{
+  height:50px;
+  width: 50px;
+  background-color: #EFEFEF;
 }
