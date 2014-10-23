@@ -95,8 +95,8 @@ Google Voice Phone: [717.469.5042](tel:+17174695042)
 		</li>
 		<li>
 			<span class="proficient-span">
-				<img class="img-circle" src="/images/running.png"/>
-				<h5 class="text-muted">Running</h5>
+				<img class="img-circle" src="/images/pokeball.png"/>
+				<h5 class="text-muted">Pokemon Master</h5>
 			</span>
 		</li>
 	</ul>
@@ -125,8 +125,8 @@ Google Voice Phone: [717.469.5042](tel:+17174695042)
 		</li>
 		<li>
 			<span class="proficient-span">
-				<img class="img-circle" src="/images/hearthstone.png"/>
-				<h5 class="text-muted">HearthStone</h5>
+				<img class="img-circle" src="/images/running.png"/>
+				<h5 class="text-muted">Running</h5>
 			</span>
 		</li>
 	</ul>
