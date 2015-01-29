@@ -21,7 +21,7 @@ layout: default
         </div>
       {% endfor %}
     </div>
-    
+
     <div class="col-xs-12 col-sm-4">
       <div class="well">
         <h3>Pages</h3>
@@ -32,10 +32,10 @@ layout: default
       </div>
     </div>
   </div>
-  
-  
+
+
   <ul class="minimal-posts-list" style="list-style-type: none;">
-  {%  for post in site.posts  offset3%}
+  {%  for post in site.posts  offset:3%}
     <li><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a> <span class="text-muted">~ {{post.date | date: "%b %-d, %Y"}} </li>
   {% endfor %}
   </ul>
