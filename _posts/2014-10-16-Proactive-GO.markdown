@@ -4,7 +4,6 @@ title:  "Proactive: Google App Scripts"
 date:   2014-10-16 9:41:48
 categories: proactive google
 ---
-I am intrigued by [Google App Scripts][googleAppScripts]. I feel that this technology could greatly increase productivity when working with Google Apps. I intend to continue my investigation in my free time. I'm playing around with automatically exporting a Google Doc to a pdf when saved. This would be 
+I am intrigued by [Google App Scripts][googleAppScripts]. I feel that this technology could greatly increase productivity when working with Google Apps. I intend to continue my investigation in my free time. I'm playing around with automatically exporting a Google Doc to a pdf when saved. This could be helpful for generating resumes.
 
 [googleAppScripts]:      https://developers.google.com/apps-script/
-
