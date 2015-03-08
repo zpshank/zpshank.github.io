@@ -2,11 +2,13 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
 
 
 
 // Our variables
-$base-font-family: News Cycle, Arial, sans-serif;
+// $base-font-family: News Cycle, Arial, sans-serif;
+$base-font-family: "Open Sans", HelveticaNueue, Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -26,10 +28,13 @@ $on-laptop:        800px;
 
 $primary:           #b10046;
 $primary-dark:      #8a0036;
-$secondary:         #0095b1;
-$secondary-dark:    #007c8a;
+$secondary:         #5cc10e;
+$secondary-dark:    #4b9c0b;
 $trinary:           #00b112;
 $trinary-dark:      #0080af;
+
+$background-dark:   #494a58;
+$background-darker: #32333c;
 
 
 // Using media queries with like this:
@@ -49,19 +54,19 @@ $trinary-dark:      #0080af;
 //     font-family: RobotoLight;
 //     src: url({{"/fonts/Roboto-Light.ttf" | prepend: site.baseurl }})
 // }
-
-@font-face {
-  font-family: 'News Cycle';
-  font-style: normal;
-  font-weight: 400;
-  src: local('News Cycle Regular'), local('NewsCycle-Regular'), url(http://fonts.gstatic.com/s/newscycle/v12/9Xe8dq6pQDsPyVH2D3tMQr3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
-}
-@font-face {
-  font-family: 'News Cycle';
-  font-style: normal;
-  font-weight: 700;
-  src: local('News Cycle Bold'), local('NewsCycle-Bold'), url(http://fonts.gstatic.com/s/newscycle/v12/G28Ny31cr5orMqEQy6ljt3bFhgvWbfSbdVg11QabG8w.woff) format('woff');
-}
+//
+// @font-face {
+//   font-family: 'News Cycle';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: local('News Cycle Regular'), local('NewsCycle-Regular'), url(http://fonts.gstatic.com/s/newscycle/v12/9Xe8dq6pQDsPyVH2D3tMQr3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+// }
+// @font-face {
+//   font-family: 'News Cycle';
+//   font-style: normal;
+//   font-weight: 700;
+//   src: local('News Cycle Bold'), local('NewsCycle-Bold'), url(http://fonts.gstatic.com/s/newscycle/v12/G28Ny31cr5orMqEQy6ljt3bFhgvWbfSbdVg11QabG8w.woff) format('woff');
+// }
 
 
 
@@ -98,11 +103,18 @@ $trinary-dark:      #0080af;
 }
 
 .fa-github {
-  color: #333;
+  color: #fff;
+}
+
+.fa-envelope {
+    color: #fff;
 }
 
 .navbar {
   font-family: $base-font-family;
+  background-color: $background-dark;
+  border-color: $background-dark;
+  border-radius: 0px;
 }
 
 a.navbar-brand:active  {
@@ -114,18 +126,16 @@ a.navbar-brand:visited  {
 }
 
 .navbar-default .navbar-brand {
-  // color: #ff2052;
-  // color: #0a89ff
-  // color: #6699ff;
-  color: $primary;
+  color: #fff;
+  margin-right: 25px;
 }
 
 .navbar-default .navbar-brand:hover {
-  color: $primary-dark;
+  color: #fff;
 }
 
 .navbar-default .navbar-brand:focus {
-  color: $primary;
+  // color: $primary;
 }
 
 a:focus {
@@ -135,6 +145,21 @@ a:focus {
 .navbar-brand img{
   height: 35px;
   width: 35px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li:hover{
+    background-color: $background-darker;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
 }
 
 .col-centered{
@@ -157,6 +182,10 @@ a:focus {
 
 .text-muted {
   color: #777;
+}
+
+.post-container {
+    margin-top: 25px;
 }
 
 .post-container .post-link{
@@ -183,7 +212,7 @@ a:focus {
   width: 35px;
 }
 
-.page-content { 
+.page-content {
   margin-bottom: 100px;
 }
 
