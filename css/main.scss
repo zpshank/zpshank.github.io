@@ -15,7 +15,7 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
+$text-color:       #333;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
@@ -28,8 +28,8 @@ $on-laptop:        800px;
 
 $primary:           #b10046;
 $primary-dark:      #8a0036;
-$secondary:         #5cc10e;
-$secondary-dark:    #4b9c0b;
+$secondary:         #112244;
+$secondary-alt:     #447788;
 $trinary:           #00b112;
 $trinary-dark:      #0080af;
 
@@ -102,18 +102,11 @@ $background-darker: #32333c;
   color: #55ACEE;
 }
 
-.fa-github {
-  color: #fff;
-}
-
-.fa-envelope {
-    color: #fff;
-}
-
 .navbar {
   font-family: $base-font-family;
-  background-color: $background-dark;
+  background-color: $background-color;
   border-color: $background-dark;
+  border-width: 0 0 1px 0;
   border-radius: 0px;
 }
 
@@ -126,12 +119,12 @@ a.navbar-brand:visited  {
 }
 
 .navbar-default .navbar-brand {
-  color: #fff;
+  color: $text-color;
   margin-right: 25px;
 }
 
 .navbar-default .navbar-brand:hover {
-  color: #fff;
+  color: $text-color;
 }
 
 .navbar-default .navbar-brand:focus {
@@ -148,18 +141,45 @@ a:focus {
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #fff;
+    color: $text-color;
 }
 .navbar-default .navbar-nav>li>a:hover {
-    color: #fff;
+    color: $text-color;
 }
 
 .navbar-default .navbar-nav>li:hover{
-    background-color: $background-darker;
+//    background-color: $background-color;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff;
+//    background-color: #fff;
+}
+
+.star-container
+{
+  position: relative;
+  height: 75px;
+  background-size: cover;
+  background-image: url(/images/stars.jpg);
+  background-position: 0 70%;
+}
+
+.star-container:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  width: 0; height: 0;
+  border-color: transparent transparent #FDFDFD transparent;
+  border-style: solid;
+  border-width: 17px;
+  z-index: 5;
+}
+
+.page-content
+{
+  margin-top: 5px;
 }
 
 .col-centered{
