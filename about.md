@@ -8,7 +8,7 @@ I am a simple, humble, passionate developer with an interest in large scale appl
 
 Want to contact me? Great!
 
-Email: [zackshank@shinytoaster.com](mailto:zackshank@shinytoaster.com)<br>
+Email: [zackshank@bigdumbsmile.com](mailto:zackshank@bigdumbsmile.com)<br>
 Google Voice Phone: [717.469.5042](tel:+17174695042)
 
 
@@ -57,6 +57,12 @@ Google Voice Phone: [717.469.5042](tel:+17174695042)
 <div class="proficient-container">
 	<h2>Intermediate</h2>
 	<ul class="list-inline">
+	    <li>
+	        <span class="proficient-span">
+	            <img class="img-circle" src="/images/cprog.png" />
+	            <h5 class="text-muted">C/C++</h5>
+	        </span>
+	    </li>
 		<li>
 			<span class="proficient-span">
 				<img class="img-circle" src="/images/android.png"/>
