@@ -95,6 +95,12 @@ Google Voice Phone: [717.469.5042](tel:+17174695042)
 		</li>
 		<li>
 			<span class="proficient-span">
+				<img class="img-circle" src="/images/python.png"/>
+				<h5 class="text-muted">Python</h5>
+			</span>
+		</li>
+		<li>
+			<span class="proficient-span">
 				<img class="img-circle" src="/images/sql.png"/>
 				<h5 class="text-muted">SQL</h5>
 			</span>
