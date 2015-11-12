@@ -10,14 +10,16 @@ layout: default
     <div class="col-xs-12">
       {% for post in site.posts limit:3 %}
         <div class="post-container">
-          <h2 class="post-link">
-            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          </h2>
-          <p class="post-date text-muted">
-              <span class="glyphicon glyphicon-calendar">
-              </span> {{ post.date | date: "%b %-d, %Y" }}
-          </p>
-          <p class="post-preview hidden-xs">
+          <div class="post-header">
+            <h1 class="post-link">
+              <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h1>
+            <p class="post-date">
+              <i class="fa fa-calendar"></i>
+              {{ post.date | date: "%b %-d, %Y" }}
+            </p>
+          </div>
+          <p class="post-preview ">
             {{ post.content | strip_html | truncatewords:75}}
             <a href="{{ post.url | prepend: site.baseurl }}">Continue</a>
           </p>

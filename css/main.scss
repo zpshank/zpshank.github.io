@@ -1,258 +1,62 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
-@charset "utf-8";
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
 
-
-
-// Our variables
-// $base-font-family: News Cycle, Arial, sans-serif;
-$base-font-family: "Open Sans", HelveticaNueue, Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$spacing-unit:     30px;
-
-$text-color:       #333;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-$primary:           #b10046;
-$primary-dark:      #8a0036;
-$secondary:         #112244;
-$secondary-alt:     #447788;
-$trinary:           #00b112;
-$trinary-dark:      #0080af;
-
-$background-dark:   #494a58;
-$background-darker: #32333c;
-
-
-// Using media queries with like this:
-// @include media-query($palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+@font-face {
+    font-family: "Open Sans";
+    src: url('/fonts/OpenSans-Regular.ttf') format('truetype');
 }
 
-// @font-face {
-//     font-family: RobotoLight;
-//     src: url({{"/fonts/Roboto-Light.ttf" | prepend: site.baseurl }})
-// }
-//
-// @font-face {
-//   font-family: 'News Cycle';
-//   font-style: normal;
-//   font-weight: 400;
-//   src: local('News Cycle Regular'), local('NewsCycle-Regular'), url(http://fonts.gstatic.com/s/newscycle/v12/9Xe8dq6pQDsPyVH2D3tMQr3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
-// }
-// @font-face {
-//   font-family: 'News Cycle';
-//   font-style: normal;
-//   font-weight: 700;
-//   src: local('News Cycle Bold'), local('NewsCycle-Bold'), url(http://fonts.gstatic.com/s/newscycle/v12/G28Ny31cr5orMqEQy6ljt3bFhgvWbfSbdVg11QabG8w.woff) format('woff');
-// }
-
-
-
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "syntax-highlighting"
-;
-
-// FI Sizes
-.size-12 { font-size: 12px; }
-
-.size-14 { font-size: 14px; }
-
-.size-16 { font-size: 16px; }
-
-.size-18 { font-size: 18px; }
-
-.size-21 { font-size: 21px; }
-
-.size-24 { font-size: 24px; }
-
-.size-36 { font-size: 36px; }
-
-.size-48 { font-size: 48px; }
-
-.size-60 { font-size: 60px; }
-
-.size-72 { font-size: 72px; }
-
-.fa-twitter {
-  color: #55ACEE;
+@font-face {
+    font-family: "Bebas Neue";
+    src: url('/fonts/BebasNeue-Regular.otf') format('opentype');
 }
 
-.navbar {
-  font-family: $base-font-family;
-  background-color: $background-color;
-  border-color: $background-dark;
-  border-width: 0 0 1px 0;
-  border-radius: 0px;
+body {
+    font-family: "Open Sans";
+    background-color: #fcfcfc;
+    color: #444;
 }
 
-a.navbar-brand:active  {
-  text-decoration: none;
+a {
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-a.navbar-brand:visited  {
-  text-decoration: none;
+a:hover {
+    color: #222;
+    text-decoration: underline;
 }
 
-.navbar-default .navbar-brand {
-  color: $text-color;
-  margin-right: 25px;
+.site-header, .post-header {
+    font-family: "Bebas Neue";
+    padding: 10px 0;
 }
 
-.navbar-default .navbar-brand:hover {
-  color: $text-color;
+.site-title {
+    margin-bottom: 0;
 }
 
-.navbar-default .navbar-brand:focus {
-  // color: $primary;
+.site-footer {
+    font-family: "Bebas Neue";
+    padding: 10px 0;
 }
 
-a:focus {
-  outline: none;
+.site-twitter {
+    margin-top: 0;
+    color: #555;
 }
 
-.navbar-brand img{
-  height: 35px;
-  width: 35px;
+.page {
+    padding: 15px 0;
+    background-color: #fcfcfc;
 }
 
-.navbar-default .navbar-nav>li>a {
-    color: $text-color;
-}
-.navbar-default .navbar-nav>li>a:hover {
-    color: $text-color;
+.post-link, .post-title {
+    font-family: "Bebas Neue", serif;
+    margin-bottom: 0;
 }
 
-.navbar-default .navbar-nav>li:hover{
-//    background-color: $background-color;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-//    background-color: #fff;
-}
-
-.star-container
-{
-  position: relative;
-  height: 75px;
-  background-size: cover;
-  background-image: url(/images/stars.jpg);
-  background-position: 0 70%;
-}
-
-.star-container:after {
-  content: '';
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 15%;
-  width: 0; height: 0;
-  border-color: transparent transparent #FDFDFD transparent;
-  border-style: solid;
-  border-width: 17px;
-  z-index: 5;
-}
-
-.page-content
-{
-  margin-top: 5px;
-}
-
-.col-centered{
-  float: none;
-  margin: 0 auto;
-}
-
-// Footer
-.footer {
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-  height: 60px;
-  background-color: #fff;
-}
-
-.footer .container .text-muted{
-  margin-top: 15px;
-}
-
-.text-muted {
-  color: #777;
-}
-
-.post-container {
-    margin-top: 25px;
-}
-
-.post-container .post-link{
-  margin-bottom: 0;
-}
-
-.post-container .post-date{
-  margin-left: 5px;
-  margin-top: 0px;
-  margin-bottom: 10px;
-}
-
-.post-container .post-preview {
-  margin-left: 5px;
-  margin-bottom: 10px;
-}
-
-.minimal-posts-list {
-  margin: 15px 0 0 0;
-}
-
-.game-img-footer {
-  height: 35px;
-  width: 35px;
-}
-
-.page-content {
-  margin-bottom: 100px;
-}
-
-.proficient-container {
-  text-align: center;
-}
-
-.list-inline {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.proficient-span {
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: center;
-}
-
-.proficient-span img{
-  height:50px;
-  width: 50px;
-  background-color: #EFEFEF;
+.post-date {
+    margin-bottom: 0;
 }

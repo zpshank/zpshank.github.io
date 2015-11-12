@@ -12,7 +12,7 @@ Email: [zackshank@bigdumbsmile.com](mailto:zackshank@bigdumbsmile.com)<br>
 Google Voice Phone: [717.469.5042](tel:+17174695042)
 
 
-<div class="proficient-container">
+<!--<div class="proficient-container">
 	<h2>Advanced</h2>
 	<ul class="list-inline">
 		<li>
@@ -181,4 +181,4 @@ Google Voice Phone: [717.469.5042](tel:+17174695042)
 			</span>
 		</li>
 	</ul>
-</div>
+</div>-->
