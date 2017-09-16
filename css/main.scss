@@ -1,70 +1,20 @@
 ---
 ---
 
-@font-face {
-    font-family: "Open Sans";
-    src: url('/fonts/OpenSans-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: "Bebas Neue";
-    src: url('/fonts/BebasNeue-Regular.otf') format('opentype');
-}
-
-@font-face {
-    font-family: "Montserrat-Black";
-    src: url('/fonts/Montserrat-Black.otf') format('opentype');
-}
-
-@font-face {
-    font-family: "Montserrat-Bold";
-    src: url('/fonts/Montserrat-Bold.otf') format('opentype');
-}
-
-@font-face {
-    font-family: "Montserrat-ExtraBold";
-    src: url('/fonts/Montserrat-ExtraBold.otf') format('opentype');
-}
-
-@font-face {
-    font-family: "Montserrat-Hairline";
-    src: url('/fonts/Montserrat-Hairline.otf') format('opentype');
-}
-
-@font-face {
-    font-family: "Montserrat-Light";
-    src: url('/fonts/Montserrat-Light.otf') format('opentype');
-}
-
-@font-face {
-    font-family: "Montserrat-Regular";
-    src: url('/fonts/Montserrat-Regular.otf') format('opentype');
-}
-
-@font-face {
-    font-family: "Montserrat-SemiBold";
-    src: url('/fonts/Montserrat-SemiBold.otf') format('opentype');
-}
-
-@font-face {
-    font-family: "Montserrat-UltraLight";
-    src: url('/fonts/Montserrat-UltraLight.otf') format('opentype');
-}
-
 body {
-    font-family: "Open Sans";
-    background-color: #fafafa;
-    color: #444;
+    font-family: "Open Sans", sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
 }
 
 a {
-    color: #222;
+    color: #111;
     text-decoration: none;
     font-weight: bold;
 }
 
 a:hover {
-    color: #222;
+    color: #111;
     text-decoration: underline;
 }
 
@@ -73,7 +23,6 @@ a:hover {
 }
 
 .site-header, .post-header {
-    font-family: "Bebas Neue";
     padding: 10px 0;
 }
 
@@ -97,12 +46,15 @@ a:hover {
 }
 
 .site-title {
-    margin-left: 5px;
+    margin-left: 15px;
     margin-bottom: 0;
 }
 
+.site-title > a {
+    font-weight: 300;
+}
+
 .site-footer {
-    font-family: "Bebas Neue";
     padding: 10px 5px;
 }
 
@@ -116,8 +68,15 @@ a:hover {
 }
 
 .post-link, .post-title {
-    font-family: "Bebas Neue", serif;
     margin-bottom: 0;
+}
+
+.post-link > a {
+    font-weight: 300;
+}
+
+.post-title > a {
+    font-weight: 300;
 }
 
 .post-date {
